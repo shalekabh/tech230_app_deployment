@@ -52,3 +52,4 @@ http://192.168.10.100:300
 You should see this:
 ![Alt text](../tech230_vagrant_intro/pics_for_mds/2023-05-11%20(13).png)
 
+Congratulations!
