@@ -53,3 +53,31 @@ You should see this:
 ![Alt text](pics_for_mds/2023-05-11%20(13).png)
 
 Congratulations!
+
+### Automate this whole process
+
+In order to do this, we must up date our provisions.md file
+
+After the code used to start nginx which is:
+
+```sudo systemctl start nginx```
+
+You want to put in the following code:
+
+```cd tech230_app_deployment```
+
+```cd app```
+
+```sudo apt-get install nodejs -y```
+
+```sudo apt-get install python-software-properties```
+
+```curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -```
+
+```sudo apt-get install nodejs -y```
+
+```sudo npm install pm2 -g```
+
+```npm start```
+
+The key part here is the ```cd tech230_app_deployment``` and the ```cd app``` - These two commands need to be separate commands otherewise it will not change the directory. If you write the command ing long form, i.e ```cd tech230_app_deployment/app``` it will not work!
